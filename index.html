@@ -12,11 +12,13 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jennifer &amp; Aswin">
 <meta property="og:description" content="Together with our families, we joyfully invite you to celebrate the union of our lives in the presence of God.">
-<!-- TODO: set og:url and og:image to your own GitHub Pages address (must be absolute) -->
 <meta property="og:url" content="https://linsanjo7.github.io/aswin-jennifer/">
-<meta property="og:image" content="https://linsanjo7.github.io/aswin-jennifer/preview.jpg">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#7a1a22">
 </head>
 <body>
 
@@ -51,9 +53,16 @@
 <!-- INVITATION -->
 <main id="invitation">
 
+<!-- MUSIC -->
+<button id="musicButton" class="music-button" onclick="toggleMusic()" aria-label="Toggle music">♪</button>
+<audio id="weddingMusic" loop preload="auto">
+<source src="bgm.mp3" type="audio/mpeg">
+</audio>
+
 <!-- HERO -->
 <section class="hero section-frame">
 <p class="bismillah hero-bismillah">✝</p>
+<div class="arch-photo"><img src="couple.jpg" alt="Jennifer and Aswin"></div>
 <p class="gold-small">TOGETHER WITH OUR FAMILIES,<br>WE JOYFULLY INVITE YOU TO CELEBRATE<br>THE UNION OF OUR LIVES IN THE PRESENCE OF GOD</p>
 <h3 class="names">Jennifer <span>&amp;</span> Aswin</h3>
 <p class="hero-date">10 · 18 · 20 December 2026</p>
@@ -97,7 +106,7 @@
 <section class="dua-section section-frame">
 <p class="gold-small">A BEAUTIFUL BEGINNING</p>
 <h2>What God Has Joined Together</h2>
-<p class="dua-text">“Therefore what God has joined together,<br>let no one separate.”<br>— Mark 10:9 —</p>
+<p class="dua-text verse">“Therefore what God has joined together,<br>let no one separate.”<br>— Mark 10:9 —</p>
 </section>
 
 

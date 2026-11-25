@@ -37,6 +37,12 @@ const opening = document.getElementById("opening");
 // Start envelope opening animation
 opening.classList.add("opening-active");
 
+// Start music when the seal is tapped (browsers allow this after a tap)
+const music = document.getElementById("weddingMusic");
+const button = document.getElementById("musicButton");
+music.volume = 0.7;
+music.play().then(function () { button.innerText = "Ⅱ"; }).catch(function () {});
+
 // Wait for the envelope animation to finish
 setTimeout(function () {
 
@@ -131,4 +137,41 @@ function addToCalendar(key) {
     "&details=" + encodeURIComponent("Marriage ceremony of Jennifer and Aswin") +
     "&location=" + encodeURIComponent(e.loc);
   window.open(url, "_blank");
+}
+
+
+/* =========================
+SCROLL REVEAL
+========================= */
+
+(function () {
+  const items = document.querySelectorAll(".section-frame > *, .event-card");
+  items.forEach(function (el, i) { el.classList.add("reveal"); });
+  if (!("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    items.forEach(function (el) { el.classList.add("in"); });
+    return;
+  }
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
+
+/* =========================
+MUSIC BUTTON
+========================= */
+
+function toggleMusic() {
+  const music = document.getElementById("weddingMusic");
+  const button = document.getElementById("musicButton");
+  if (music.paused) {
+    music.play().then(function () { button.innerText = "Ⅱ"; }).catch(function () {});
+  } else {
+    music.pause();
+    button.innerText = "♪";
+  }
 }
