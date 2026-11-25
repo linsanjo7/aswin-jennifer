@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jennifer &amp; Aswin | Wedding Invitation</title>
+
+<meta name="description" content="You are cordially invited to the wedding of Jennifer &amp; Aswin: 10, 18 and 20 December 2026, Abu Dhabi, UAE.">
+
+<!-- WhatsApp Preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jennifer &amp; Aswin">
+<meta property="og:description" content="Together with our families, we joyfully invite you to celebrate the union of our lives in the presence of God.">
+<!-- TODO: set og:url and og:image to your own GitHub Pages address (must be absolute) -->
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/preview.jpg">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OPENING ENVELOPE -->
+<section class="opening" id="opening">
+<div class="envelope-scene">
+
+<p class="bismillah">✝</p>
+
+<p class="envelope-top-text">YOU ARE CORDIALLY INVITED</p>
+
+<div class="envelope">
+<div class="invitation-preview">
+<p>THE WEDDING OF</p>
+<h1>Jennifer <span>&amp;</span> Aswin</h1>
+</div>
+<div class="envelope-back"></div>
+<div class="envelope-flap"></div>
+<div class="envelope-front"></div>
+<button class="envelope-seal" onclick="openInvitation()" aria-label="Open wedding invitation">
+<span>J <small>&amp;</small> A</span>
+</button>
+</div>
+
+<p class="envelope-hint">TAP THE GOLD SEAL TO OPEN</p>
+<p class="envelope-date">10 · 18 · 20 DEC 2026</p>
+
+</div>
+</section>
+
+
+<!-- INVITATION -->
+<main id="invitation">
+
+<!-- HERO -->
+<section class="hero section-frame">
+<p class="bismillah hero-bismillah">✝</p>
+<p class="gold-small">TOGETHER WITH OUR FAMILIES,<br>WE JOYFULLY INVITE YOU TO CELEBRATE<br>THE UNION OF OUR LIVES IN THE PRESENCE OF GOD</p>
+<h3 class="names">Jennifer <span>&amp;</span> Aswin</h3>
+<p class="hero-date">10 · 18 · 20 December 2026</p>
+</section>
+
+
+<!-- COUNTDOWN -->
+<section class="countdown-section section-frame">
+<p class="gold-small">COUNTING DOWN TO OUR SPECIAL DAY</p>
+<h2>Our Big Day</h2>
+<div class="countdown">
+<div class="count-item"><strong id="days">00</strong><span>Days</span></div>
+<div class="count-item"><strong id="hours">00</strong><span>Hours</span></div>
+<div class="count-item"><strong id="minutes">00</strong><span>Minutes</span></div>
+<div class="count-item"><strong id="seconds">00</strong><span>Seconds</span></div>
+</div>
+</section>
+
+
+<!-- COUPLE -->
+<section class="couple-section section-frame">
+<p class="gold-small">THE HAPPY COUPLE</p>
+
+<div class="person">
+<h2>Jennifer</h2>
+<p>Daughter of</p>
+<p class="parents">Liaqat Masih &amp; Ambreen</p>
+</div>
+
+<div class="heart">♡</div>
+
+<div class="person">
+<h2>Aswin</h2>
+<p>Son of</p>
+<p class="parents">Jinachandran &amp; Shyni Jinan</p>
+</div>
+</section>
+
+
+<!-- BLESSING -->
+<section class="dua-section section-frame">
+<p class="gold-small">A BEAUTIFUL BEGINNING</p>
+<h2>What God Has Joined Together</h2>
+<p class="dua-text">“Therefore what God has joined together,<br>let no one separate.”<br>— Mark 10:9 —</p>
+</section>
+
+
+<!-- EVENT -->
+<section class="event-section section-frame">
+<p class="gold-small">THE CELEBRATION</p>
+<h2>Marriage Ceremony</h2>
+
+<div class="event-card">
+<p class="event-icon">📜</p>
+<p class="event-date">NIKKAH</p>
+<p class="event-date-big">10 DECEMBER 2026</p>
+<button class="calendar-button" style="margin-top:18px" onclick="addToCalendar('nikkah')">📅 ADD TO CALENDAR</button>
+</div>
+<br><div class="event-card">
+<p class="event-icon">❀</p>
+<p class="event-date">MEHNDI</p>
+<p class="event-date-big">18 DECEMBER 2026</p>
+<p class="event-time">ADCB Building, Tower A<br>Abu Dhabi</p>
+<p class="event-time">6:00 PM</p>
+<button class="calendar-button" style="margin-top:18px" onclick="addToCalendar('mehndi')">📅 ADD TO CALENDAR</button>
+</div>
+<br><div class="event-card">
+<p class="event-icon">💍</p>
+<p class="event-date">RECEPTION</p>
+<p class="event-date-big">20 DECEMBER 2026</p>
+<p class="event-time">ADCB Building, Tower B<br>Abu Dhabi</p>
+<p class="event-time">5:00 PM</p>
+<button class="calendar-button" style="margin-top:18px" onclick="addToCalendar('reception')">📅 ADD TO CALENDAR</button>
+</div>
+</section>
+
+
+<!-- VENUE -->
+<section class="venue-section section-frame">
+<p class="gold-small">THE VENUE</p>
+<h2>ADCB Building, Abu Dhabi</h2>
+<p class="venue-description">
+Your presence will make our celebration more meaningful
+as we begin this beautiful journey together in God’s love.
+</p>
+<a class="map-button"
+href="https://share.google/MBhoIPZQXwXyI1NQz"
+target="_blank" rel="noopener">
+📍 VIEW LOCATION
+</a>
+</section>
+
+
+<!-- CLOSING -->
+<section class="closing section-frame">
+<p class="bismillah">✝</p>
+<p class="closing-small">ALL ARE WELCOME</p>
+<h2>Jennifer <span>&amp;</span> Aswin</h2>
+<p class="closing-date">10 · 18 · 20 · 12 · 2026</p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

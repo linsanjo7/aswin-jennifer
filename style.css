@@ -1,0 +1,712 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Georgia, "Times New Roman", serif;
+background: #f6ecd6;
+color: #5a1a1a;
+text-align: center;
+}
+
+/* =========================
+OPENING SCREEN
+========================= */
+
+.opening {
+min-height: 100vh;
+min-height: 100svh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 25px;
+background: #f6ecd6;
+position: relative;
+}
+
+.opening::before,
+.opening::after {
+content: "❦";
+position: absolute;
+color: #b89b62;
+font-size: 38px;
+opacity: 0.65;
+}
+
+.opening::before {
+top: 45px;
+left: 35px;
+transform: rotate(-35deg);
+}
+
+.opening::after {
+bottom: 45px;
+right: 35px;
+transform: rotate(145deg);
+}
+
+.opening-card {
+width: 100%;
+max-width: 430px;
+padding: 45px 25px;
+background: transparent;
+border: none;
+}
+
+.bismillah {
+font-size: 25px;
+line-height: 2;
+color: #8c7048;
+}
+
+.opening-small,
+.gold-small {
+font-size: 9px;
+letter-spacing: 3px;
+color: #9d8359;
+margin: 22px 0;
+}
+
+.opening-invite {
+font-size: 11px;
+letter-spacing: 2px;
+color: #806c57;
+}
+
+.opening h1 {
+font-size: 46px;
+font-weight: normal;
+line-height: 1.15;
+color: #7a1a22;
+margin: 25px 0;
+}
+
+.opening h1 span {
+display: block;
+font-size: 24px;
+margin: 8px 0;
+color: #b29661;
+}
+
+.opening-date {
+font-size: 13px;
+letter-spacing: 4px;
+color: #8b755d;
+}
+
+.opening button {
+margin-top: 38px;
+padding: 13px 30px;
+border: 1px solid #ad8b57;
+border-radius: 30px;
+background: transparent;
+color: #80653f;
+font-family: inherit;
+font-size: 10px;
+letter-spacing: 3px;
+}
+
+/* =========================
+MAIN INVITATION
+========================= */
+
+#invitation {
+display: none;
+background: #f6ecd6;
+overflow: hidden;
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+.section-frame {
+position: relative;
+min-height: 75vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 80px 24px;
+border-bottom: 1px solid rgba(160, 128, 82, 0.18);
+}
+
+.section-frame::before {
+content: "❦";
+color: #b69a62;
+font-size: 24px;
+margin-bottom: 25px;
+}
+
+.hero {
+min-height: 100vh;
+min-height: 100svh;
+}
+
+.hero::before {
+display: none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero-bismillah {
+margin-bottom: 25px;
+}
+
+.hero-title {
+font-size: 21px;
+font-weight: normal;
+letter-spacing: 2px;
+color: #80684d;
+margin-bottom: 25px;
+}
+
+.names {
+font-size: 52px;
+line-height: 1.05;
+font-weight: normal;
+color: #7a1a22;
+}
+
+.names span {
+display: block;
+font-size: 26px;
+margin: 10px 0;
+color: #b29661;
+}
+
+.hero-date {
+margin-top: 35px;
+font-size: 15px;
+letter-spacing: 3px;
+color: #806b53;
+}
+
+.hero-time {
+margin-top: 10px;
+font-size: 14px;
+letter-spacing: 3px;
+color: #aa8957;
+}
+
+/* =========================
+COUNTDOWN
+========================= */
+
+.countdown-section {
+min-height: 60vh;
+}
+
+.countdown-section h2,
+.couple-section h2,
+.dua-section h2,
+.event-section h2,
+.venue-section h2,
+.calendar-section h2,
+.closing h2 {
+font-size: 29px;
+font-weight: normal;
+color: #7a1a22;
+}
+
+.countdown {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+margin-top: 35px;
+}
+
+.count-item {
+width: 72px;
+min-height: 75px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 1px solid rgba(172, 140, 91, 0.45);
+background: rgba(255, 255, 255, 0.35);
+}
+
+.count-item strong {
+font-size: 23px;
+font-weight: normal;
+color: #7a1a22;
+}
+
+.count-item span {
+margin-top: 7px;
+font-size: 8px;
+letter-spacing: 2px;
+color: #9a8365;
+}
+
+/* =========================
+HAPPY COUPLE
+========================= */
+
+.couple-section {
+min-height: 85vh;
+}
+
+.person {
+margin: 25px 0;
+}
+
+.person h2 {
+font-size: 30px;
+}
+
+.person p {
+margin-top: 10px;
+font-size: 13px;
+color: #8b765f;
+}
+
+.person .parents {
+font-size: 15px;
+color: #765b40;
+}
+
+.heart {
+font-size: 30px;
+color: #b2945c;
+margin: 10px 0;
+}
+
+/* =========================
+DUA
+========================= */
+
+.dua-section {
+min-height: 75vh;
+}
+
+.arabic-dua {
+max-width: 650px;
+margin-top: 35px;
+font-size: 27px;
+line-height: 2.1;
+color: #80623f;
+}
+
+.dua-text {
+max-width: 500px;
+margin-top: 30px;
+font-size: 14px;
+line-height: 1.9;
+color: #8a765e;
+font-style: italic;
+}
+
+/* =========================
+EVENT
+========================= */
+
+.event-card {
+width: 100%;
+max-width: 330px;
+margin-top: 35px;
+padding: 35px 20px;
+border: 1px solid rgba(172, 140, 91, 0.45);
+background: rgba(255, 255, 255, 0.3);
+}
+
+.event-icon {
+font-size: 28px;
+color: #b29661;
+margin-bottom: 20px;
+}
+
+.event-date {
+font-size: 11px;
+letter-spacing: 3px;
+color: #8e785d;
+}
+
+.event-date-big {
+margin-top: 10px;
+font-size: 19px;
+letter-spacing: 2px;
+color: #7a1a22;
+}
+
+.event-time {
+margin-top: 15px;
+font-size: 17px;
+color: #aa8957;
+}
+
+/* =========================
+VENUE
+========================= */
+
+.venue-description {
+max-width: 430px;
+margin: 25px auto;
+font-size: 14px;
+line-height: 1.8;
+color: #89745c;
+}
+
+.map-button,
+.calendar-button {
+display: inline-block;
+padding: 13px 24px;
+border: 1px solid #ad8b57;
+border-radius: 30px;
+background: transparent;
+color: #7a1a22;
+font-family: inherit;
+font-size: 10px;
+letter-spacing: 2px;
+text-decoration: none;
+}
+
+/* =========================
+CALENDAR
+========================= */
+
+.calendar-section {
+min-height: 60vh;
+}
+
+.calendar-section h2 {
+max-width: 400px;
+line-height: 1.5;
+margin-bottom: 30px;
+}
+
+/* =========================
+CLOSING
+========================= */
+
+.closing {
+min-height: 70vh;
+}
+
+.closing::before {
+display: none;
+}
+
+.closing .bismillah {
+margin-bottom: 30px;
+}
+
+.closing-small {
+font-size: 10px;
+letter-spacing: 4px;
+color: #9a8060;
+margin-bottom: 25px;
+}
+
+.closing h2 {
+font-size: 46px;
+line-height: 1.1;
+}
+
+.closing h2 span {
+display: block;
+font-size: 25px;
+margin: 8px;
+color: #b29661;
+}
+
+.closing-date {
+margin-top: 30px;
+font-size: 12px;
+letter-spacing: 4px;
+color: #8c755b;
+}
+
+/* =========================
+MUSIC BUTTON
+========================= */
+
+.music-button {
+position: fixed;
+right: 18px;
+bottom: 18px;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+border: 1px solid #b29661;
+background: #f6ecd6;
+color: #7a1a22;
+font-size: 19px;
+z-index: 100;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+.opening h1 {
+font-size: 42px;
+}
+
+.hero-title {
+font-size: 19px;
+}
+
+.names {
+font-size: 47px;
+}
+
+.section-frame {
+padding: 70px 18px;
+}
+
+.count-item {
+width: 68px;
+}
+
+.arabic-dua {
+font-size: 22px;
+}
+
+.venue-section h2 {
+font-size: 26px;
+}
+
+.closing h2 {
+font-size: 42px;
+}
+}
+
+/* SOFT FADED RED ROSE PETALS */
+
+.rose-petal {
+position: fixed;
+top: -35px;
+left: 0;
+width: 11px;
+height: 16px;
+background: radial-gradient(
+ellipse at 30% 25%,
+#eaa0a5,
+#c75b68 60%,
+#963b4b
+);
+border-radius: 90% 10% 80% 20%;
+opacity: 0.55;
+pointer-events: none;
+z-index: 999999;
+animation: roseFall linear forwards;
+}
+
+@keyframes roseFall {
+0% {
+transform: translate3d(0, -30px, 0) rotate(0deg);
+opacity: 0;
+}
+
+15% {
+opacity: 0.55;
+}
+
+100% {
+transform: translate3d(var(--drift), 110vh, 0) rotate(650deg);
+opacity: 0;
+}
+}
+/* ENVELOPE DESIGN */
+
+.opening::before,
+.opening::after {
+display: none;
+}
+
+.envelope-scene {
+width: 100%;
+max-width: 430px;
+text-align: center;
+}
+
+.envelope-top-text {
+font-size: 10px;
+letter-spacing: 4px;
+color: #a88750;
+margin: 28px 0 35px;
+}
+
+.envelope {
+position: relative;
+width: 310px;
+height: 205px;
+max-width: 90vw;
+margin: 0 auto;
+perspective: 1000px;
+filter: drop-shadow(0 12px 15px rgba(95,70,40,.16));
+}
+
+.envelope-back {
+position: absolute;
+inset: 0;
+background: #e9dcc5;
+border: 1px solid #c6a66b;
+border-radius: 5px;
+box-shadow: 0 12px 15px rgba(95,70,40,.16);
+}
+
+.invitation-preview {
+position: absolute;
+width: 88%;
+height: 175px;
+left: 6%;
+top: 10px;
+background: #fffdf8;
+border: 1px solid #d4b77d;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+color: #80643f;
+transition: transform 1.3s ease;
+z-index: 2;
+}
+
+.invitation-preview p {
+font-size: 9px;
+letter-spacing: 2px;
+}
+
+.invitation-preview h1 {
+font-family: Georgia, serif;
+font-size: 23px;
+font-weight: normal;
+}
+
+.invitation-preview h1 span {
+color: #b79555;
+}
+
+.envelope-flap {
+position: absolute;
+inset: 0;
+background: #f0e5d3;
+clip-path: polygon(0 0, 100% 0, 50% 58%);
+transform-origin: 50% 0%;
+
+z-index: 5;
+backface-visibility: hidden;
+}
+
+
+.envelope-front {
+position: absolute;
+inset: 0;
+background: linear-gradient(
+135deg,
+#f1e5d0,
+#e8d8bd,
+#f3e8d5
+);
+clip-path: polygon(
+0 0,
+50% 58%,
+100% 0,
+100% 100%,
+0 100%
+);
+border: 1px solid #c6a66b;
+z-index: 4;
+}
+
+.envelope-front::before,
+.envelope-front::after {
+content: "❧";
+position: absolute;
+top: 42%;
+color: #a9823e;
+font-size: 42px;
+opacity: 0.9;
+}
+
+.envelope-front::before {
+left: 7%;
+transform: rotate(-25deg);
+}
+
+.envelope-front::after {
+right: 7%;
+transform: scaleX(-1) rotate(-25deg);
+}
+
+.envelope-seal {
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 63px;
+height: 63px;
+border-radius: 50%;
+border: 2px solid #d8bd83;
+background: radial-gradient(circle, #d8b66d, #a9823e);
+color: #fffaf0;
+font-family: Georgia, serif;
+font-size: 17px;
+z-index: 6;
+cursor: pointer;
+box-shadow: 0 3px 10px rgba(80,55,20,.25);
+}
+
+.envelope-seal small {
+font-size: 11px;
+}
+
+.envelope-hint {
+margin-top: 35px;
+color: #a88750;
+font-size: 10px;
+letter-spacing: 3px;
+}
+
+.envelope-date {
+margin-top: 15px;
+color: #806b50;
+font-size: 12px;
+letter-spacing: 3px;
+}
+
+
+
+.opening.opening-active .invitation-preview {
+transform: translateY(-155px);
+}
+
+.opening.opening-active .envelope-seal {
+opacity: 0;
+pointer-events: none;
+transition: opacity .3s ease;
+}
+@keyframes flapOpen {
+0% {
+transform: rotateX(0deg);
+z-index: 5;
+}
+
+99% {
+transform: rotateX(-179deg);
+z-index: 5;
+}
+
+100% {
+transform: rotateX(-180deg);
+z-index: 1;
+}
+}
+
+.opening.opening-active .envelope-flap {
+animation: flapOpen 1s ease forwards;
+}
